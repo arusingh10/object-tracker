@@ -7,7 +7,7 @@ import imutils
 import time
 
 
-def trackObject(video = None,greenLower=(30, 76, 45), greenUpper=(67, 182, 197)):
+def trackObject(greenLower=(30, 76, 45), greenUpper=(67, 182, 197), video = None):
     print(greenLower, greenUpper)
 
     # initialize the list of tracked points, the frame counter,
@@ -156,4 +156,4 @@ def trackObject(video = None,greenLower=(30, 76, 45), greenUpper=(67, 182, 197))
 
 
 if __name__ == "__main__":
-    trackObject()
+    trackObject('output2.mp4')

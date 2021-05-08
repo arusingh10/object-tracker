@@ -12,6 +12,13 @@ class Image(Base):
     name = Column(String)
     path = Column(String)
 
+class Video(Base):
+
+    __tablename__ = "videos"
+    id =Column(Integer, primary_key=True)
+    name = Column(String)
+    path = Column(String)
+
 class Mask(Base):
     __tablename__="masking"
     id=Column(Integer, primary_key=True)
